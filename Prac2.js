@@ -27,10 +27,9 @@ app.get('/Dynamicimage', (req, res) => {
   else {
     res.send("Image not found")
   }
-  /*fs.readFile(imageName, (err)=> {
-    res.status.end("This Image is Not Found")
-  }
-  )*/
+  app.get('/', (req, res) => {
+    res.send('Its nots Working!')
+  })
 
 })
 
